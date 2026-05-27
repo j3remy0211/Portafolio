@@ -32,7 +32,7 @@
     --radius-lg: 1rem;
     --radius-xl: 1.5rem;
     --gradient-primary: linear-gradient(135deg, hsl(158 45% 38%), hsl(50 38% 52%));
-    --gradient-glow: linear-gradient(135deg, hsl(158 45% 38% / 0.4), hsl(50 38% 52% / 0.4));
+    --gradient-glow: linear-gradient(135deg, oklch(58.141% 0.09805 165.832 / 0.4), hsl(50 38% 52% / 0.4));
     --gradient-card-border: linear-gradient(135deg, hsl(158 45% 38% / 0.3), hsl(50 38% 52% / 0.15), transparent);
     --shadow-glow: 0 0 60px hsl(158 45% 38% / 0.15);
     --shadow-glow-strong: 0 0 80px hsl(158 45% 38% / 0.25);
@@ -417,43 +417,57 @@ nav.scrolled {
 
 /* Subtitle / Typing */
 .hero-roles-wrapper {
-    min-height: 3.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
 }
 
-.hero-subtitle {
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
-    color: hsl(var(--muted-foreground));
-    font-weight: 500;
-    margin-bottom: 0.75rem;
+.hero-roles-list {
+    list-style: none;
+    padding: 0;
+    padding-inline-start: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    align-items: center;
+}
+
+.hero-role-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 1.8rem;
+    animation: role-slide-in 0.25s ease-out both;
+}
+
+@keyframes role-slide-in {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
 }
 
 .hero-role-text {
-    font-size: clamp(1.1rem, 3vw, 1.6rem);
+    font-size: 1.25rem;
     font-weight: 600;
-    color: hsl(var(--foreground));
-    position: relative;
-    display: inline-block;
-}
-
-.hero-role-text .text-gradient {
+    line-height: 1.4;
     background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    display: inline;
 }
 
 .typing-cursor {
     display: inline-block;
     width: 2px;
-    height: 1.2em;
+    height: 1.1em;
     background: hsl(var(--primary));
-    margin-left: 2px;
-    vertical-align: text-bottom;
+    margin-left: 3px;
+    vertical-align: middle;
     animation: cursor-blink 1s step-end infinite;
+    flex-shrink: 0;
 }
 
 @keyframes cursor-blink {
@@ -519,6 +533,7 @@ nav.scrolled {
     border-radius: inherit;
     padding: 1px;
     background: var(--gradient-card-border);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     pointer-events: none;
@@ -1038,14 +1053,13 @@ nav.scrolled {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, hsl(174 72% 62%), hsl(262 83% 75%));
     opacity: 0;
     transition: opacity var(--transition-smooth);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 32px hsl(174 72% 52% / 0.3);
+    box-shadow: 0 8px 32px hsla(158, 45%, 38%, 0.568);
 }
 
 .btn-primary:hover::before {

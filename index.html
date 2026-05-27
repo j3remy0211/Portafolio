@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeremy Benjamín Chávez</title>
     <meta name="description" content="Portfolio of Jeremy Benjamín Chávez Hernández — Junior DevOps Engineer, Web Developer, and Linux enthusiast based in León, Nicaragua.">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/JBCH.png" />
     <link rel="stylesheet" href="./assets/css/styles.css">
 
     <!-- Google Fonts -->
@@ -70,9 +70,7 @@
                 </h1>
 
                 <div class="hero-roles-wrapper reveal reveal-delay-2">
-                    <span class="hero-role-text">
-                        <span class="text-gradient" id="typingText"></span><span class="typing-cursor"></span>
-                    </span>
+                    <ul class="hero-roles-list" id="rolesListContainer"></ul>
                 </div>
             </div>
     </section>
@@ -289,8 +287,16 @@
 
                 <p class="modal-text" id="modalDescription"></p>
 
-                <div style="margin-top: 2rem; text-align: center;">
-                    <button class="btn-primary" onclick="closeModal()">
+                <div style="margin-top: 2rem; text-align: center; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a id="modalRepoLink"
+                       href="#"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn-primary"
+                       style="display: none; text-decoration: none;">
+                        Visit Project
+                    </a>
+                    <button class="btn-secondary" onclick="closeModal()">
                         <span style="display: inline-flex; align-items: center; gap: 0.5rem;">
                             <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M4 14L14 4M4 4l10 10"></path>
