@@ -152,6 +152,7 @@ nav {
     z-index: 1000;
     transition: var(--transition-smooth);
     padding: 0.5rem 0;
+    border-bottom: 1px solid transparent;
 }
 
 nav.scrolled {

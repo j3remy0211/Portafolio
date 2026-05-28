@@ -32,6 +32,8 @@ const techStackData = [
         color: '#0678BE',
         icon: './assets/img/SVG/drupal.svg',
         modalImage: 'assets/img/portfolio/CapDrupal.png',
+        url: 'https://www.drupal.org/u/jerech',
+        urlLabel: 'Visit Profile',
         description: "I have been working with Drupal for two years, playing a key role in the development and maintenance of projects based on this CMS. In my day-to-day work at MTech, Drupal is one of my primary tools, and I also use Docker, DDEV, Composer, Drush, and Git, which allow me to optimize development, dependency management, and the efficient deployment of projects on this platform. I have helped resolve more than forty-two issues."
     },
     {
@@ -127,6 +129,14 @@ const projectsData = [
         modalImage: 'assets/img/portfolio/GA.png',
         url: 'https://galeria-astronomica.xo.je/',
         description: "Astronomical Gallery is a comprehensive web application that connects NASA's official APOD (Astronomy Picture of the Day) API with an immersive front-end visualization system. A custom PHP middleware layer handles all API key management, query routing, and response normalization, completely abstracting the complexity of data retrieval from the client layer. The interface consumes this intermediate API to dynamically populate a calendar-based gallery interface, where each day node displays its corresponding astronomical resource (whether a high-resolution photograph or an embedded video) with smooth transitions and adaptive layout logic. The end result is a visually stunning, dynamic, and highly aesthetic application that transforms raw spatial data into an engaging user experience, worthy of the cosmos it displays."
+    },
+    {
+        id: 102,
+        title: 'Vístete con Conciencia',
+        image: 'assets/img/SVG/verde.svg',
+        modalImage: 'assets/img/portfolio/Verde.png',
+        url: 'https://j3remy0211.github.io/Mapa-Verde-de-la-Moda-ULSA/',
+        description: "Vístete con Conciencia is a civic-educational web platform engineered as part of a university initiative at Universidad La Salle (ULSA) in León, Nicaragua. The system architecture delivers a multi-section informational interface designed to raise awareness about the environmental and social impact of the fast fashion industry — exposing hidden data such as the 7,500 liters of water required to produce a single pair of jeans and the resulting river contamination caused by mass textile production. The platform integrates a practical Green Map module that surfaces geolocation-based listings of local second-hand shops, donation centers, and repair workshops across Nicaragua, enabling users to take immediate, tangible action in their own communities. The interface was engineered to be visually compelling and highly accessible, ensuring that complex sustainability data is presented in a digestible and aesthetically refined format that drives genuine behavioral change."
     }
 ];
 
@@ -401,6 +411,7 @@ function openModal(projectId) {
     if (repoLink) {
         if (project.url) {
             repoLink.href = project.url;
+            repoLink.textContent = project.urlLabel || 'Visit Project';
             repoLink.style.display = 'inline-flex';
         } else {
             repoLink.style.display = 'none';
@@ -454,23 +465,50 @@ function handleNavbarScroll() {
 /* ============================================
     CONTACT FORM
 ============================================ */
-function handleFormSubmit(event) {
+async function handleFormSubmit(event) {
     event.preventDefault();
-    const submitBtn = document.getElementById('submitBtn');
-    const successMessage = document.getElementById('successMessage');
-    const form = document.getElementById('contactForm');
 
+    const submitBtn    = document.getElementById('submitBtn');
+    const successMsg   = document.getElementById('successMessage');
+    const errorMsg     = document.getElementById('errorMessage');
+    const form         = document.getElementById('contactForm');
+    const btnLabel     = submitBtn.querySelector('span');
+
+    // Reset previous state
+    successMsg.classList.remove('show');
+    if (errorMsg) errorMsg.classList.remove('show');
+
+    // UI: sending state
     submitBtn.disabled = true;
-    submitBtn.querySelector('span').textContent = 'Sending...';
+    btnLabel.textContent = 'Sending…';
 
-    setTimeout(() => {
-        successMessage.classList.add('show');
-        form.reset();
+    try {
+        const data = new FormData(form);
+        const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: data
+        });
+        const result = await response.json();
+
+        if (result.success) {
+            // Success
+            successMsg.classList.add('show');
+            form.reset();
+            setTimeout(() => successMsg.classList.remove('show'), 6000);
+        } else {
+            // API returned an error
+            throw new Error(result.message || 'Submission failed.');
+        }
+    } catch (err) {
+        // Network or API error
+        if (errorMsg) {
+            errorMsg.querySelector('p').textContent = 'Something went wrong. Please try again or email me directly.';
+            errorMsg.classList.add('show');
+            setTimeout(() => errorMsg.classList.remove('show'), 7000);
+        }
+        console.error('Web3Forms error:', err);
+    } finally {
         submitBtn.disabled = false;
-        submitBtn.querySelector('span').textContent = 'Send Message';
-
-        setTimeout(() => {
-            successMessage.classList.remove('show');
-        }, 5000);
-    }, 1000);
+        btnLabel.textContent = 'Send Message';
+    }
 }
