@@ -5,109 +5,117 @@ const techStackData = [
     {
         id: 1,
         title: 'Git',
-        color: '#F05032',
         icon: './assets/img/SVG/git.svg',
-        modalImage: 'assets/img/portfolio/CapGit.png',
+        modalImage: 'assets/img/portfolio/CapGit.webp',
         description: "I have two years of experience using Git as a version control system. During this time, I have learned to use this tool efficiently from the Linux command line. My skills include using Git for branch management, commit and merge management, as well as resolving code conflicts. At MTech, I have worked with collaborative development workflows, ensuring best practices in source code management and change integration."
     },
     {
         id: 2,
         title: 'GitHub',
-        color: '#f0f0f0',
         icon: './assets/img/SVG/github.svg',
-        modalImage: 'assets/img/portfolio/CapGitHub.png',
+        modalImage: 'assets/img/portfolio/CapGitHub.webp',
         description: "I have been creating and managing GitHub repositories for two years, where I host both personal and collaborative projects. Thanks to my experience with this platform, I have learned how to properly structure repositories, work with forks and pull requests, and use GitHub Actions to automate workflows and create custom domains."
     },
     {
         id: 3,
         title: 'GitLab',
-        color: '#FC6D26',
         icon: './assets/img/SVG/gitlab.svg',
-        modalImage: 'assets/img/portfolio/CapGitLab.png',
+        modalImage: 'assets/img/portfolio/CapGitLab.webp',
         description: "Over the past two years, I have worked with GitLab on managing open-source repositories. During this time, I have resolved more than forty-two issues in projects for various companies, including the official MTech website and an NGO in Africa, among others. My experience with GitLab extends beyond repository management and code contributions to include setting up continuous integration and continuous deployment (CI/CD) workflows, ensuring efficient and automated software delivery."
     },
     {
         id: 4,
         title: 'Drupal',
-        color: '#0678BE',
         icon: './assets/img/SVG/drupal.svg',
-        modalImage: 'assets/img/portfolio/CapDrupal.png',
+        modalImage: 'assets/img/portfolio/CapDrupal.webp',
         url: 'https://www.drupal.org/u/jerech',
         urlLabel: 'Visit Profile',
         description: "I have been working with Drupal for two years, playing a key role in the development and maintenance of projects based on this CMS. In my day-to-day work at MTech, Drupal is one of my primary tools, and I also use Docker, DDEV, Composer, Drush, and Git, which allow me to optimize development, dependency management, and the efficient deployment of projects on this platform. I have helped resolve more than forty-two issues."
     },
     {
         id: 5,
-        title: 'PHP',
-        color: '#777BB4',
-        icon: './assets/img/SVG/php.svg',
-        modalImage: 'assets/img/portfolio/CapPHP.png',
-        description: "Drupal is based on PHP, so I have developed skills in this programming language to customize and troubleshoot within the platform. Although I am not an absolute expert, I strive to write clean and efficient code when tackling problems in GitLab and Drupal within MTech. I take the time to analyze and design effective solutions, ensuring they are scalable and maintainable."
-    },
-    {
-        id: 6,
         title: 'Linux',
-        color: '#FCC624',
         icon: './assets/img/SVG/linux.svg',
-        modalImage: 'assets/img/portfolio/CapLinuxMint.png',
+        modalImage: 'assets/img/portfolio/CapLinuxMint.webp',
         description: "I’ve been using Linux for about two years, even before I started my master’s degree in Technology, and it has become my primary operating system. During this time, I’ve learned to use it professionally, optimizing workflows in software development and maintenance. I have applied my knowledge in both academic and professional settings, installing advanced software and configuring systems to maximize performance and compatibility with development tools. I used the Ubuntu-based LinuxMint Xfce 22 distribution for over a year, but I have since switched to the Arch-based CachyOS Xfce4."
     },
     {
-        id: 7,
+        id: 6,
         title: 'HTML5',
-        color: '#E34F26',
         icon: './assets/img/SVG/html.svg',
-        modalImage: './assets/img/portfolio/CapHTML.png',
+        modalImage: './assets/img/portfolio/CapHTML.webp',
         description: "I approach HTML5 as the foundational skeleton of web-based human-machine interfaces. By strictly adhering to semantic markup, I ensure that the structural integrity of an application remains accessible, logical, and optimized for both human users and automated data-parsing algorithms."
     },
     {
-        id: 8,
+        id: 7,
         title: 'CSS3',
-        color: '#1572B6',
         icon: './assets/img/SVG/css.svg',
-        modalImage: './assets/img/portfolio/CapCSS.png',
+        modalImage: './assets/img/portfolio/CapCSS.webp',
         description: "CSS3 provides the rendering logic I use to style and position elements within the DOM. I leverage modern specifications like Flexbox, Grid, and hardware-accelerated transitions to engineer responsive interfaces that adapt fluidly to any screen size or embedded device display without compromising rendering performance."
     },
     {
-        id: 9,
+        id: 8,
         title: 'JavaScript',
-        color: '#F7DF1E',
         icon: './assets/img/SVG/javascript.svg',
-        modalImage: './assets/img/portfolio/CapJS.png',
+        modalImage: './assets/img/portfolio/CapJS.webp',
         description: "I treat JavaScript as the central nervous system of front-end architecture. Through asynchronous programming, DOM manipulation, and event-driven logic, I breathe dynamic functionality into static interfaces, transforming them into responsive cybernetic ecosystems capable of complex client-side processing."
     },
     {
-        id: 10,
-        title: 'VS Code',
-        color: '#007ACC',
-        icon: './assets/img/SVG/visual-studio-code.svg',
-        modalImage: './assets/img/portfolio/CapVScode.png',
-        description: "Visual Studio Code served as my primary integrated development environment throughout . I’ve used this workspace with a custom set of extensions, strict code checkers, and advanced debugging tools. It acts as my command center, seamlessly connecting my programming workflow with terminal operations, version control, and telemetry from remote servers."
-    },
-    {
-        id: 11,
+        id: 9,
         title: 'Python',
-        color: '#3776AB',
         icon: './assets/img/SVG/python.svg',
-        modalImage: './assets/img/portfolio/CapPY.png',
+        modalImage: './assets/img/portfolio/CapPY.webp',
         description: "Python is my go-to language for rapid prototyping, data analysis, and automation logic. I leverage its extensive ecosystem to solve complex algorithmic problems, implement backend logic, and develop scripts that bridge the gap between raw datasets and actionable insights. I’ve been using this language since my sophomore year in college and throughout the early stages of my career."
     },
     {
-        id: 12,
+        id: 10,
         title: 'C/C++',
-        color: '#00599C',
-        icon: './assets/img/SVG/c-cpp.png',
-        modalImage: './assets/img/portfolio/CapCPP.png',
+        icon: './assets/img/SVG/c-cpp.webp',
+        modalImage: './assets/img/portfolio/CapCPP.webp',
         description: "C and C++ form the foundation of my hardware-level programming skills. I use these languages for embedded system logic, communication with microcontrollers, and applications where performance is critical. They provide the precise memory management and low-level control needed to interact directly with electronic components. It was through these languages that I first entered the world of programming during my sophomore year of college."
     },
     {
-        id: 13,
+        id: 11,
+        title: 'VS Code',
+        icon: './assets/img/SVG/visual-studio-code.svg',
+        modalImage: './assets/img/portfolio/CapVScode.webp',
+        description: "Visual Studio Code served as my primary integrated development environment throughout . I’ve used this workspace with a custom set of extensions, strict code checkers, and advanced debugging tools. It acts as my command center, seamlessly connecting my programming workflow with terminal operations, version control, and telemetry from remote servers."
+    },
+    {
+        id: 12,
         title: 'Antigravity',
-        color: '#9C27B0',
-        icon: './assets/img/SVG/antigravity.png',
-        modalImage: './assets/img/portfolio/CapAnti.png',
+        icon: './assets/img/SVG/antigravity.svg',
+        modalImage: './assets/img/portfolio/CapAnti.webp',
         description: "Antigravity has been my primary IDE since early 2026, and this is where I work on MTech and my personal projects every day."
-    }
+    },
+    {
+        id: 13,
+        title: 'PHP',
+        icon: './assets/img/SVG/php.svg',
+        modalImage: 'assets/img/portfolio/CapPHP.webp',
+        description: "Drupal is based on PHP, so I have developed skills in this programming language to customize and troubleshoot within the platform. Although I am not an absolute expert, I strive to write clean and efficient code when tackling problems in GitLab and Drupal within MTech. I take the time to analyze and design effective solutions, ensuring they are scalable and maintainable."
+    },
+    {
+        id: 14,
+        title: 'PHP_CodeSniffer',
+        icon: './assets/img/SVG/phpcs.svg',
+        modalImage: './assets/img/portfolio/phpcs.webp',
+        description: "I utilize PHP_CodeSniffer alongside the PHP Code Beautifier and Fixer (PHPCBF) to ensure my codebase is clean, consistent, and strictly aligned with industry standards. By implementing a custom phpcs.xml configuration file, I have automated the enforcement of Drupal's standard coding guidelines. This setup not only detects formatting issues and stylistic violations but also automatically corrects them, significantly streamlining my development workflow and the peer review process."
+    },
+    {
+        id: 15,
+        title: 'PHP Static Analysis Tool',
+        icon: './assets/img/SVG/phpstan.svg',
+        modalImage: './assets/img/portfolio/phpstan.webp',
+        description: "I integrate PHPStan into my development cycle to perform rigorous static analysis on my PHP code. Using a phpstan.neon configuration, I establish a solid baseline by implementing Drupal's standard Level 0 ruleset to proactively catch basic errors and bugs without executing the code. Because I build with scalability in mind, this setup is designed to easily increase in strictness levels as the code complexity and project requirements grow, ensuring a robust architecture over time."
+    },
+    {
+        id: 16,
+        title: 'PHP Unit',
+        icon: './assets/img/SVG/phpunit.svg',
+        modalImage: './assets/img/portfolio/phpunit.webp',
+        description: "To guarantee the reliability of my applications, I rely on PHPUnit for comprehensive automated testing. I have established a robust testing infrastructure using a customized phpunit.xml configured specifically for Drupal within a DDEV environment. This setup seamlessly manages database connections, strict error reporting, and categorizes my tests into dedicated suites—including unit, kernel, functional, and JavaScript tests. This structured approach allows me to verify complex logic thoroughly and prevent regressions."
+    },
 ];
 
 /* ============================================
@@ -118,7 +126,7 @@ const projectsData = [
         id: 100,
         title: 'RMS Titanic',
         image: 'assets/img/SVG/titanic.svg',
-        modalImage: 'assets/img/portfolio/RMSTitanic.png',
+        modalImage: 'assets/img/portfolio/RMSTitanic.webp',
         url: 'https://j3remy0211.github.io/Titanic/',
         description: "RMS Titanic is a static web interface designed to preserve the memory of one of the most significant and iconic events of the 20th century. The architecture prioritizes information hierarchy and visual clarity, presenting historical records, casualty statistics, and timelines of events through a carefully crafted design that ensures the end user experiences no cognitive overload. Every typographic decision, every color code, and every unit of spacing was calibrated to produce a result that is not only rich in information but also visually polished and aesthetically refined, offering an interface that feels as premium as the subject matter is profound."
     },
@@ -126,7 +134,7 @@ const projectsData = [
         id: 101,
         title: 'Astronomy Gallery',
         image: 'assets/img/SVG/GA.svg',
-        modalImage: 'assets/img/portfolio/GA.png',
+        modalImage: 'assets/img/portfolio/GA.webp',
         url: 'https://galeria-astronomica.xo.je/',
         description: "Astronomical Gallery is a comprehensive web application that connects NASA's official APOD (Astronomy Picture of the Day) API with an immersive front-end visualization system. A custom PHP middleware layer handles all API key management, query routing, and response normalization, completely abstracting the complexity of data retrieval from the client layer. The interface consumes this intermediate API to dynamically populate a calendar-based gallery interface, where each day node displays its corresponding astronomical resource (whether a high-resolution photograph or an embedded video) with smooth transitions and adaptive layout logic. The end result is a visually stunning, dynamic, and highly aesthetic application that transforms raw spatial data into an engaging user experience, worthy of the cosmos it displays."
     },
@@ -134,9 +142,25 @@ const projectsData = [
         id: 102,
         title: 'Vístete con Conciencia',
         image: 'assets/img/SVG/verde.svg',
-        modalImage: 'assets/img/portfolio/Verde.png',
+        modalImage: 'assets/img/portfolio/Verde.webp',
         url: 'https://j3remy0211.github.io/Mapa-Verde-de-la-Moda-ULSA/',
-        description: "Vístete con Conciencia is a civic-educational web platform engineered as part of a university initiative at Universidad La Salle (ULSA) in León, Nicaragua. The system architecture delivers a multi-section informational interface designed to raise awareness about the environmental and social impact of the fast fashion industry — exposing hidden data such as the 7,500 liters of water required to produce a single pair of jeans and the resulting river contamination caused by mass textile production. The platform integrates a practical Green Map module that surfaces geolocation-based listings of local second-hand shops, donation centers, and repair workshops across Nicaragua, enabling users to take immediate, tangible action in their own communities. The interface was engineered to be visually compelling and highly accessible, ensuring that complex sustainability data is presented in a digestible and aesthetically refined format that drives genuine behavioral change."
+        description: "Vístete con Conciencia is a civic-educational web platform engineered as part of a university initiative at Universidad La Salle (ULSA) in León, Nicaragua. The system architecture delivers a multi-section informational interface designed to raise awareness about the environmental and social impact of the fast fashion industry exposing hidden data such as the 7,500 liters of water required to produce a single pair of jeans and the resulting river contamination caused by mass textile production. The platform integrates a practical Green Map module that surfaces geolocation-based listings of local second-hand shops, donation centers, and repair workshops across Nicaragua, enabling users to take immediate, tangible action in their own communities. The interface was engineered to be visually compelling and highly accessible, ensuring that complex sustainability data is presented in a digestible and aesthetically refined format that drives genuine behavioral change."
+    },
+    {
+        id: 103,
+        title: 'MTech Frontend',
+        image: 'assets/img/SVG/mtech.svg',
+        modalImage: 'assets/img/portfolio/F-MTech.webp',
+        url: 'https://mtech-llc.com/',
+        description: "Contributed to the front-end development and redesign of the MTech website by customizing Drupal Twig templates, creating and integrating reusable UI components, and enhancing the homepage layout. Worked extensively with Drupal’s theme layer, including template inheritance, page-specific overrides, and component-based architecture. Implemented a new client showcase section, modified homepage content structure, and collaborated on visual improvements based on stakeholder feedback. Gained hands-on experience with Drupal theming, Twig templating, SCSS styling, asset compilation using npm and Webpack, cache management with Drush, and debugging front-end rendering issues. Strengthened skills in responsive design, component integration, troubleshooting template errors, and maintaining a modern development workflow within a DDEV local environment."
+    },
+    {
+        id: 104,
+        title: 'MTech Backend',
+        image: 'assets/img/SVG/mtech.svg',
+        modalImage: 'assets/img/portfolio/B-MTech.webp',
+        url: 'https://mtech-llc.com/',
+        description: "As a Web Developer at MTech, I specialize in building, maintaining, and optimizing robust web applications with a strong focus on PHP and Drupal. My day-to-day responsibilities involve everything from complex template modifications and feature development to integrating advanced tracking solutions. I work closely with cross-functional teams to ensure high-quality project delivery. Beyond my direct project work, I am deeply committed to the open-source ecosystem, having completed over 40 official code contributions to the Drupal community, which reflects my dedication to continuous improvement and collaborative software development."
     }
 ];
 
