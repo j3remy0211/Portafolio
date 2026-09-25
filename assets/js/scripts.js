@@ -116,6 +116,13 @@ const techStackData = [
         modalImage: './assets/img/portfolio/phpunit.webp',
         description: "To guarantee the reliability of my applications, I rely on PHPUnit for comprehensive automated testing. I have established a robust testing infrastructure using a customized phpunit.xml configured specifically for Drupal within a DDEV environment. This setup seamlessly manages database connections, strict error reporting, and categorizes my tests into dedicated suites—including unit, kernel, functional, and JavaScript tests. This structured approach allows me to verify complex logic thoroughly and prevent regressions."
     },
+    {
+        id: 17,
+        title: 'Cloudflare',
+        icon: './assets/img/SVG/cloudflare.svg',
+        modalImage: './assets/img/portfolio/cloudflare.webp',
+        description: "As part of my network deployment architecture, I have integrated Cloudflare to optimize asset delivery and manage external traffic routing. I specifically leverage Cloudflare Pages as a highly efficient, serverless infrastructure for hosting static web interfaces, akin to GitHub Pages but optimized for edge performance. Furthermore, I have developed practical expertise in DNS management and domain name resolution, successfully configuring and mapping a newly acquired custom domain to my production project, Morita's Boutique. This ensures a fast, secure, and professional gateway connecting the global network to my deployed systems."
+    },
 ];
 
 /* ============================================
