@@ -161,6 +161,14 @@ const projectsData = [
         modalImage: 'assets/img/portfolio/B-MTech.webp',
         url: 'https://mtech-llc.com/',
         description: "As a Web Developer at MTech, I specialize in building, maintaining, and optimizing robust web applications with a strong focus on PHP and Drupal. My day-to-day responsibilities involve everything from complex template modifications and feature development to integrating advanced tracking solutions. I work closely with cross-functional teams to ensure high-quality project delivery. Beyond my direct project work, I am deeply committed to the open-source ecosystem, having completed over 40 official code contributions to the Drupal community, which reflects my dedication to continuous improvement and collaborative software development."
+    },
+    {
+        id: 105,
+        title: 'Morita\'s Boutique',
+        image: 'assets/img/SVG/MB.png',
+        modalImage: 'assets/img/portfolio/MB.webp',
+        url: 'https://moritasboutique.com/',
+        description: "Developed and launched Morita's Boutique, a high-performance, mobile-first e-commerce landing page featuring dynamic regional catalogs, responsive CSS layouts, and custom typography. The project includes end-to-end deployment on Cloudflare Pages with custom domain registration, SSL activation, and complete technical SEO implementation comprising XML sitemaps, Open Graph metadata, Google Search Console integration, and local search optimization."
     }
 ];
 
