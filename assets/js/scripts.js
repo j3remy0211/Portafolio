@@ -176,6 +176,30 @@ const projectsData = [
         modalImage: 'assets/img/portfolio/MB.webp',
         url: 'https://moritasboutique.com/',
         description: "Developed and launched Morita's Boutique, a high-performance, mobile-first e-commerce landing page featuring dynamic regional catalogs, responsive CSS layouts, and custom typography. The project includes end-to-end deployment on Cloudflare Pages with custom domain registration, SSL activation, and complete technical SEO implementation comprising XML sitemaps, Open Graph metadata, Google Search Console integration, and local search optimization."
+    },
+        {
+        id: 106,
+        title: 'Servicios Topográficos León Nicaragua',
+        image: 'assets/img/SVG/servitopodp.png',
+        modalImage: 'assets/img/portfolio/ServiTopoDP.webp',
+        url: 'https://servicios-topo-dp.pages.dev/',
+        description: "Servicios Topo DP is a web platform designed for the secure consultation of topographic receipts and blueprints by clients. The project was originally developed under a monolithic architecture using Drupal 11 and, to eliminate server costs and radically optimize load speeds, it was refactored and migrated to Astro, operating as a 100% static application (SSG) on Cloudflare Pages. To maintain the privacy of financial information and PDF files without relying on an active database, the new architecture implemented a cryptographic security system based on build-time SHA-256 hashes. Currently, both the original Drupal 11 environment and the new static Astro version are deployed, live, and fully functional simultaneously, demonstrating the ability to manage and maintain legacy systems alongside modern web architectures."
+    },
+    {
+        id: 107,
+        title: 'El Tablero',
+        image: 'assets/img/SVG/eltablero.svg',
+        modalImage: 'assets/img/portfolio/eltablero.webp',
+        url: 'https://el-tablero.pages.dev/',
+        description: "El Tablero, is an interactive static chess encyclopedia detailing fundamental piece movements and biographies of historical players. The project is built with Astro to generate dynamic routes from Markdown content collections, acting as a high-speed, flat-file database. The interface utilizes Tailwind CSS v4 for a responsive, purple-themed design, integrating interactive SVG graphics, optimized WebP photographic images, and a persistent dark mode system managed with vanilla JavaScript, all automatically compiled and deployed to production through Cloudflare Pages."
+    },
+        {
+        id: 108,
+        title: 'Panadería y Pastelería Alvarado',
+        image: 'assets/img/SVG/panaderiaalvarado.svg',
+        modalImage: 'assets/img/portfolio/panaderiaalvarado.webp',
+        url: 'https://panaderiaypasteleriaalvarado.com/',
+        description: "For this project, I designed and developed a modern, highly optimized web platform for Panadería y Pastelería Alvarado, focused on boosting their local digital presence. Built with Astro and Tailwind CSS, I delivered a lightning-fast, responsive interface that engages users through an immersive visual experience, featuring an edge-to-edge photo mosaic integrated with a custom Vanilla JS Lightbox. The UI design incorporates elegant details such as infinite typewriter animations and bespoke SVG dividers to reinforce the brand's warm identity. Finally, the site was successfully deployed on Cloudflare Pages with a custom domain, implementing advanced technical SEO configurations (Sitemaps and Google Search Console) and direct Google Maps integration to ensure rapid indexing and outstanding organic search visibility."
     }
 ];
 
